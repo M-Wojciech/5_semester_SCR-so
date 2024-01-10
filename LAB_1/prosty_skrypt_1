@@ -1,0 +1,8 @@
+touch probny_plik
+echo proba  > probny_plik
+
+cat probny_plik
+
+echo $1 > probny_plik
+
+cat probny_plik

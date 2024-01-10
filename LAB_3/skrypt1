@@ -1,0 +1,9 @@
+echo "start skrypt1"
+
+sh skrypt2
+
+while [ 1 ]
+do
+    echo "skrypt1: dzialam"
+    sleep 5
+done

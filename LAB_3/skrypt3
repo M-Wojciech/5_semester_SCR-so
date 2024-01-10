@@ -1,0 +1,7 @@
+echo "start skrypt3"
+
+while [ 1 ]
+do
+    echo "skrypt3: dzialam"
+    sleep 3
+done
