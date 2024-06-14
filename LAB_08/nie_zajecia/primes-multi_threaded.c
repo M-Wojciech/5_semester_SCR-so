@@ -51,8 +51,8 @@ void *thread_prime_count(void *id)
             znalezione++;
             suma += current_to_check;
             pthread_mutex_unlock(&muteks_sumowania);
-            last_chceked_in_thread_ptr[last_chceked_in_thread_ptr[K*K+(int)(__intptr_t)id]*K+(int)(__intptr_t)id] = current_to_check;  
-            last_chceked_in_thread_ptr[K*K+(int)(__intptr_t)id] = (last_chceked_in_thread_ptr[K*K+(int)(__intptr_t)id]+1)%K;
+            last_chceked_in_thread_ptr[last_chceked_in_thread_ptr[K*K+(int)(intptr_t)id]*K+(int)(intptr_t)id] = current_to_check;  
+            last_chceked_in_thread_ptr[K*K+(int)(intptr_t)id] = (last_chceked_in_thread_ptr[K*K+(int)(intptr_t)id]+1)%K;
         }
 
         if (znalezione >= N)
